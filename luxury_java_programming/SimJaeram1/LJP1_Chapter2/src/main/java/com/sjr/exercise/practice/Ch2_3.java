@@ -8,7 +8,7 @@ public class Ch2_3 {                                                            
 
         // 변수 및 상수 선언
         int money, remain;                                                                  // int형 변수 money, remain 선언, 사용자가 입력한 돈, 나머지 돈
-        int manwon5, manwon1, cheonwon1, baekwon5, baekwon1, sibwon5, sibwon1, illwon1;      // int형 변수 manwon5, manwon1, cheonwon1, baekwon5, baekwon1, sibwon5, sibwon1, illwon 선언, 지폐 개수
+        int manwon5, manwon1, cheonwon1, baekwon5, baekwon1, sibwon5, sibwon1, illwon1;     // int형 변수 manwon5, manwon1, cheonwon1, baekwon5, baekwon1, sibwon5, sibwon1, illwon 선언, 지폐 개수
 
         // 로직
         // 1. 변환할 돈 입력
@@ -31,7 +31,7 @@ public class Ch2_3 {                                                            
         remain = remain % 50;                                                               // 변수 remain에 remain % 50 연산 결과 리턴 받아 대입하여 초기화, 오십원으로 변환하고 남은 돈
         sibwon1 = remain / 10;                                                              // 변수 sibwon1에 remain / 10 연산 결과 리턴 받아 대입하여 초기화, 십원 개수
         remain = remain % 10;                                                               // 변수 remain에 remain % 10 연산 결과 리턴 받아 대입하여 초기화, 십원으로 변환하고 남은 돈
-        illwon1 = remain;                                                                    // 변수 illwon1에 remain 대입하여 초기화, 일원 개수
+        illwon1 = remain;                                                                   // 변수 illwon1에 remain 대입하여 초기화, 일원 개수
 
         // 4. 변환한 결과 출력, 개수가 0개이면 출력 X
         if (manwon5 != 0) {                                                                 // 변수 manwon5에 저장된 값이 0이 아니면, 즉 오만원권 개수가 0개 아니면
@@ -53,10 +53,10 @@ public class Ch2_3 {                                                            
             System.out.println("오십원 " + sibwon5 + "개");                                   // System.out.println() 메소드 호출하여 문자열 "오십원 " + sibwon5 + "개" 출력, 오십원 개수 출력
         }
         if (sibwon1 != 0) {                                                                 // 변수 sibwon1에 저장된 값이 0이 아니면, 즉 십원 개수가 0개 아니면
-            System.out.println("십원 " + sibwon1 + "개");                                     // System.out.println() 메소드 호출하여 문자열 "십원 " + sibwon1 + "개" 출력, 십원 개수 출력
+            System.out.println("십원 " + sibwon1 + "개");                                    // System.out.println() 메소드 호출하여 문자열 "십원 " + sibwon1 + "개" 출력, 십원 개수 출력
         }
-        if (illwon1 != 0) {                                                                  // 변수 illwon1에 저장된 값이 0이 아니면, 즉 일원 개수가 0개 아니면
-            System.out.println("일원 " + illwon1 + "개");                                     // System.out.println() 메소드 호출하여 문자열 "일원 " + illwon1 + "개" 출력, 일원 개수 출력
+        if (illwon1 != 0) {                                                                 // 변수 illwon1에 저장된 값이 0이 아니면, 즉 일원 개수가 0개 아니면
+            System.out.println("일원 " + illwon1 + "개");                                    // System.out.println() 메소드 호출하여 문자열 "일원 " + illwon1 + "개" 출력, 일원 개수 출력
         }
 
         scanner.close();                                                                    // scanner 객체의 close() 메소드 호출하여 객체 닫기, 사용종료

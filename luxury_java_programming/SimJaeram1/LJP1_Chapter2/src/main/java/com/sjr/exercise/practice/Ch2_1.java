@@ -20,7 +20,7 @@ public class Ch2_1 {                                                    // Ch2_1
         dollar = won/Exchange_Rate;                                     // 변수 dollar에 won/Exchange_Rate 연산 결과 리턴 받아 대입, 원화를 달러화로 변환하여 저장
 
         // 3. 결과 출력
-        System.out.println(won + "원은 $" + dollar + "입니다.");         // System.out.println() 메소드 호출하여 원화를 달러화로 변환한 결과 안내 메세지 출력
+        System.out.println(won + "원은 $" + dollar + "입니다.");          // System.out.println() 메소드 호출하여 원화를 달러화로 변환한 결과 안내 메세지 출력
 
         scanner.close();                                                // scanner 객체의 close() 메소드 호출하여 객체 닫기, 즉 사용 종료
     }                                                                   // main() 메소드 정의 끝
