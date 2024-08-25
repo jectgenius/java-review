@@ -16,6 +16,7 @@ public class Ch2_12_1 {                                     // Ch2_12_1 클래�
         number1 = scanner.nextDouble();                     // 변수 number1에 scanner 객체의 nextDouble() 메소드 호출하여 사용자로부터 입력 받은 값 double형으로 리턴 받아 대입하여 초기화, 즉 사용자로부터 피연산자 입력
         operator = scanner.next();                          // 변수 operator에 scanner 객체의 next() 메소드 호출하여 사용자로부터 입력 받은 값 String형으로 리턴 받아 대입하여 초기화, 즉 사용자로부터 연산자 입력
         number2 = scanner.nextDouble();                     // 변수 number2에 scanner 객체의 nextDouble() 메소드 호출하여 사용자로부터 입력 받은 값 double형으로 리턴 받아 대입하여 초기화, 즉 사용자로부터 피연산자 입력
+
         // 2. 연산 종류 판별 및 계산
         if(operator.equals("+") == true) {                  // 변수 operator에 저장된 값이 equals() 메소드 호출하여 문자열 "+"과 같은지 비교한 결과가 true이면, 즉 사용자가 입력한 연산자가 +이면
             result = number1 + number2;                     // 변수 result에 number1 + number2 연산 결과 리턴 받아 대입하여 초기화, 즉 연산 결과
@@ -30,7 +31,8 @@ public class Ch2_12_1 {                                     // Ch2_12_1 클래�
             if (number2 == 0) {                             // 만약 number2에 저장된 값이 0이면, 즉 사용자가 0으로 나누려고 하면
                 System.out.println("0으로 나눌 수 없습니다."); // System.out.println() 메소드 호출하여 문자열 "0으로 나눌 수 없습니다." 출력, 즉 0으로 나눌 수 없음 안내 메세지 출력
                 return;                                     // 프로그램 종료
-            } else {                                        // 그렇지 않으면, 즉 사용자가 0이 아닌 수로 나누려고 하면
+            }
+            else {                                        // 그렇지 않으면, 즉 사용자가 0이 아닌 수로 나누려고 하면
                 result = number1 / number2;                 // 변수 result에 number1 / number2 연산 결과 리턴 받아 대입하여 초기화, 즉 연산 결과
             }
         }
