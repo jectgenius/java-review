@@ -20,5 +20,5 @@ public class Ch3_2 {                            // Ch3_2 클래스 정의 시작
             }                                    // 한 행 출력 완료, 안쪽 for문 끝
             System.out.println();                // System.out.println() 메소드 호출하여 줄바꿈
         }                                        // 배열 모두 출력 완료, 바깥쪽 for문 끝
-    }                                           // main() 메소드 정의 끝
-}                                               // Ch3_2 클래스 정의 끝
+    }                                            // main() 메소드 정의 끝
+}                                                // Ch3_2 클래스 정의 끝
